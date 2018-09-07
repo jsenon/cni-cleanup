@@ -1,4 +1,4 @@
-  apiVersion: apps/v1
+apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: cni-cleanup
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cni-cleanup
-        image: jsenon/cni-cleanup:latest
+        image: hectorj2f/cni_cleanup:latest
         volumeMounts:
           - name: varcni
             mountPath: /var/lib/cni/networks

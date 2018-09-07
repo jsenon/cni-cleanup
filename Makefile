@@ -25,7 +25,7 @@ build_local:
 	go build 
 build:
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
-	docker build $(DOCKER_BUILD_ARGS) -t $(DOCKER_USER)/cni-cleanups:$(APP_VERSION)  .
+	docker build $(DOCKER_BUILD_ARGS) -t $(DOCKER_USER)/cni-cleanup:$(APP_VERSION)  .
 lint:
 	go get -u github.com/alecthomas/gometalinter
 	gometalinter --install
