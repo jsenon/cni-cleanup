@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cni-cleanup
-        image: jsenon/cni_cleanup:latest
+        image: jsenon/cni-cleanup:latest
         volumeMounts:
           - name: varcni
             mountPath: /var/lib/cni/networks
